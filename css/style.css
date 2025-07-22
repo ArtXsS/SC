@@ -1019,6 +1019,14 @@ img {
     .footer__social-links {
         justify-content: center;
     }
+
+    .modal-img {
+        transform: translateY(20%);
+    }
+
+    .interactive-photo {
+        display: none;
+    }
 }
 
 @media (max-width: 630px) {
@@ -1153,10 +1161,12 @@ img {
     }
 }
 
-@media (max-width: 420px) {
-    .modal-img {
-        transform: translateY(100%);
-    }
+@media (max-width: 500px) {
+   .modal-nav {
+        width: 39%;
+        top: 73%;
+        left: 29%;
+   }
 }
 
 /* Дополнительные адаптивные стили для бургер-меню */
@@ -1230,6 +1240,10 @@ img {
     body.menu-open {
         overflow: hidden;
     }
+
+    .modal-img {
+        max-width: 500px;
+    }
 }
 
 /* Адаптация формы телефона */
@@ -1245,6 +1259,11 @@ img {
     
     .phone-form__button {
         width: 100%;
+    }
+
+    .modal-img {
+        width: 70%;
+        max-height: 80vh;
     }
 }
 
