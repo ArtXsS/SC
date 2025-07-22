@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header specifications">
+        <section class="header__top">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a href="/index.html#header__info" onclick="window.location.reload()"><img src="/assets/images/icons/SC_icon.png" alt="" class="logo__header"></a>
+                </div>
+
+                <div class="burger-menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+
+                <nav>
+                    <ul class="list__item">
+                        <li class="list__items" data-about_us><a href="/index.html#main__info-aboutUs">О нас</a></li>
+                        <li class="list__items" data-bedside-btn><a href="/index.html#bedside__table">Тумбочки</a></li>
+                        <li class="list__items" data-shells-btn><a href="/index.html#shells">Раковины</a></li>
+                        <li class="list__items"><a href="#!">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="main specification__main">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/assets/images/bedside-tables/marcal130.jpg" alt="" class="swiper-image" data-index="0">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bedside-tables/marcal130__specifications.jpg" alt="" class="swiper-image" data-index="1">
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal" id="imageModal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-img" id="modalImage">
+            <div class="modal-nav">
+            <button class="modal-prev">❮</button>
+            <button class="modal-next">❯</button>
+            </div>
+        </div>
+
+        <div class="specification__content__section">
+            <div class="container">
+                <div class="specification__content">
+                    <div class="specification__info">
+                        <h2 class="specification__title">Тумбочка Marcal 130(левая)</h2>
+                        <p class="specification__desc">11 790 ₽</p>
+                        <button class="specification__btn">Оставить заявку</button>
+                    </div>
+                    <div class="specification__info-block">
+                        <div class="desc__info-block-title">Описание</div>
+                        <p class="desc__info-block-desc">Подвесная тумба - 100% влагостойкая тумба выполнена из МДФ. Изделия из МДФ отличаются более долгим сроком эксплуатации, повышенной прочностью и высокой влагоустойчивостью. Белоснежная, гладкая, как стекло, поверхность проста в уходе и легко моется. Фасады тумбы покрыты ПВХ-пленкой с высокой степенью глянца, что обеспечивает изделию привлекательный внешний вид, а также износостойкость и долговечность.</p>
+                    </div>
+                    <div class="specification__block">
+                        <h3 class="specification__block-title">Характеристики</h3>
+                        <div class="specification__block-parametrs">
+                            <div class="block__parametrs-depth">
+                                <p class="block__parametrs-title">Стиральные машины глубиной до, мм</p>
+                                <p class="block__parametrs-num">450.8</p>
+                            </div>
+
+                            <div class="block__parametrs-dimensions">
+                                <p class="block__parametrs-title">Размер раковины,см (Ш*В*Г)</p>
+                                <p class="block__parametrs-num">129.8×600×48.2</p>
+                            </div>
+
+                            <div class="block__parametrs-wheight">
+                                <p class="block__parametrs-title">Вес, кг</p>
+                                <p class="block__parametrs-num">19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+
+        <div class="modal__specifications">
+            <div class="container">
+                <span class="modal-close" id="closeModal">&times;</span>
+                <div class="modal__content">
+                    <h1 class="title__modal-content">Оставьте свой номер телефона</h1>
+                    <form class="phone-form__container">
+                        <input 
+                            type="tel" 
+                            class="phone-form__input" 
+                            placeholder="+7 (___) ___-__-__"
+                            required
+                        >
+                        <button type="submit" class="phone-form__button">Оставить заявку</button>
+                        <p class="polite__conf">Нажимая на "Оставить заявку" вы соглашаетесь с условиями обработки персональных данных.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Логотип -->
+                <div class="footer__logo">
+                    <a href="#header__info" class="footer__logo-link">
+                        <img src="/assets/images/icons/SC_icon.png" alt="Логотип Симбирск Климат" class="footer__logo-img">
+                    </a>
+                </div>
+
+                <!-- Контактная информация -->
+                <div class="footer__contacts">
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__phone">
+                        
+                        <a href="tel:+71234567890" class="footer__phone-link">+7 (123) 456-78-90</a>
+                    </div>
+                    <div class="footer__email">
+                        
+                        <a href="mailto:info@simbirsk-klimat.ru" class="footer__email-link">info@simbirsk-klimat.ru</a>
+                    </div>
+                </div>
+
+                <!-- Меню -->
+                <div class="footer__menu">
+                    <h3 class="footer__title">Меню</h3>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="/index.html#main__info-aboutUs" class="footer__menu-link">О нас</a></li>
+                        <li class="footer__menu-item"><a href="/index.html#bedside__table" class="footer__menu-link">Тумбочки</a></li>
+                        <li class="footer__menu-item"><a href="/index.html#shells" class="footer__menu-link">Раковины</a></li>
+                    </ul>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="footer__social">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="footer__social-links">
+                        <a href="#" class="footer__social-link">
+                            <img src="/assets/images/icons/vk-logo.svg">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="/assets/images/icons/telegram-logo.svg">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="/assets/images/icons/whatsapp-logo.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Копирайт -->
+            <div class="footer__copyright">
+                <p>&copy; 2023 "Симбирск Климат". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/assets/js/specifications/specifications.js" type="module"></script>
+</html>
